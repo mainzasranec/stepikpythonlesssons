@@ -1,5 +1,2 @@
-a = [int(i) for i in input().split()]
-total = 0
-for number in a:
-    total += number
-print(total)
+numbers = [int(i) for i in input().split()]
+print(sum(numbers))
