@@ -1,4 +1,3 @@
-''' Ну и хуету я сделал'''
 numbers = [int(i) for i in input().split()]
 newnumbers = []
 if len(numbers) == 1:
