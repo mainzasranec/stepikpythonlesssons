@@ -1,5 +1,10 @@
-a = int(input())
-s = []
-for i in range (a+1):
-    s += [i] * i 
-print(*s[:a])
+num = [int(i) for i in input().split()]
+dbl = int(input())
+newnum = []
+for i in range(len(num)):
+    if num[i] == dbl:
+        newnum.append(i)
+    if dbl not in num:
+        print("Отсутствует")
+        break
+print(*newnum)
