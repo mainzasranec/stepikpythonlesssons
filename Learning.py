@@ -1,10 +1,11 @@
-num = [int(i) for i in input().split()]
-dbl = int(input())
-newnum = []
-for i in range(len(num)):
-    if num[i] == dbl:
-        newnum.append(i)
-    if dbl not in num:
-        print("Отсутствует")
+matrix = []
+inp = []
+while True:
+    inp = str(input())
+    if inp != "end":
+        inp = inp.split()
+        inp = [int(i) for i in inp]
+        matrix.append(inp)
+    else:
         break
-print(*newnum)
+print(matrix)
