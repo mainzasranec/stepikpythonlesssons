@@ -1,8 +1,8 @@
 def update_dictionary(d, key, value):
-    if d[key] in d:
+    if key in d:
         d[key] = [value]
         return
-    if d[key] not in d:
+    if key not in d:
          d[2] = [value]
          return
     if d[2] not in d:
@@ -11,3 +11,8 @@ def update_dictionary(d, key, value):
 
 d = {}
 print (update_dictionary(d, 1, -1))
+print(d)
+update_dictionary(d, 2, -2)
+print(d)
+update_dictionary(d, 1, -3)
+print(d)
